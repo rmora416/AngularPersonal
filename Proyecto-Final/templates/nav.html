@@ -1,5 +1,5 @@
 		<!-- Barra de navegación -->
-		<nav class="navbar navbar-inverse">
+		<nav class="navbar navbar-inverse" data-spy="affix">
 		  <div class="container-fluid">
 		    <!-- Brand and toggle get grouped for better mobile display -->
 		    <div class="navbar-header">
@@ -23,15 +23,15 @@
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="nav navbar-nav">		        
 		        <li class="dropdown">					
-					<div class="btn-group btn-group-custom">
-					  <button type="button" class="btn btn-info">Boletas</button>
+					<div class="btn-group btn-group-custom">					  
 					  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					  	Boletas
 					    <span class="caret"></span>
 					    <span class="sr-only">Toggle Dropdown</span>
 					  </button>
 					  <ul class="dropdown-menu">
-					    <li><a href="#">Listar</a></li>
-					    <li><a href="#/AgregarBoleta">Agregar</a></li>		            					    
+					    <li><a href="#/home">Listar</a></li>
+					    <li><a href="#/agregarBoleta">Agregar</a></li>		            					    
 					    <li role="separator" class="divider"></li>		            
 					    <li><a href="#">Boletas Incompletas</a></li>
 					  </ul>
@@ -41,9 +41,9 @@
 
 			<ul class="nav navbar-nav">		        
 		        <li class="dropdown">					
-					<div class="btn-group btn-group-custom">
-					  <button type="button" class="btn btn-info">Catálogos</button>
+					<div class="btn-group btn-group-custom">					  
 					  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					  	Catálogos
 					    <span class="caret"></span>
 					    <span class="sr-only">Toggle Dropdown</span>
 					  </button>
@@ -90,7 +90,7 @@
 		        <div class="form-group">
 		          <input type="text" class="form-control" placeholder="Texto de busqueda">
 		        </div>
-		        <button type="submit" class="btn btn-default">Buscar</button>
+		        <button type="submit" class="btn btn-default"> <span class="glyphicon glyphicon-search"></span> Buscar</button>
 		      </form>
 		      
 		    </div><!-- /.navbar-collapse -->

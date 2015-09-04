@@ -2,6 +2,7 @@
 <html ng-app="app">
 <head>
 	<title>MIVAH: Sistema de Emergencias</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- Personal css	-->
 	<link rel="stylesheet" type="text/css" href="styles/main.css">
@@ -14,7 +15,7 @@
 <body>
 			
 
-	<div class="container" ng-app="app">
+	<div class="container-fluid" ng-app="app">
 		<header ng-include="'templates/nav.html'"> </header>
 		
 		<div ng-view></div>	
@@ -26,17 +27,24 @@
 
 	<!-- Angular javascript references-->
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular-route.min.js"></script>
-
-	<!-- Project references -->
-	<script src="app.js"></script>
-	<script src="controllers.js"></script>
-	<script src="services.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular-route.min.js"></script>	
 
 	<!-- Bootstrap references -->
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	
+	<!-- Firebase -->
+	<script src="https://cdn.firebase.com/js/client/2.2.9/firebase.js"></script>
+	<script src="http://cdn.firebase.com/libs/angularfire/1.1.2/angularfire.js"></script>
+
+	<!-- Project references -->
+	<script src="scripts/app.js"></script>
+	<script src="scripts/controllers.js"></script>
+	<script src="scripts/services/products.js"></script>
+	<script src="scripts/services/boletas.js"></script>
+	
+
 </body>
 </html>

@@ -2,3 +2,61 @@
 	margin-top: 7px;
 	margin-left:7px;
 }
+
+  
+body {
+  position: relative;
+}
+.affix {
+  top: 20px;
+}
+div.col-sm-9 div {
+  height: 250px;
+  font-size: 28px;
+}
+#section1 {color: #fff; background-color: #1E88E5;}
+#section2 {color: #fff; background-color: #673ab7;}
+#section3 {color: #fff; background-color: #ff9800;}
+#section41 {color: #fff; background-color: #00bcd4;}
+#section42 {color: #fff; background-color: #009688;}
+
+@media screen and (max-width: 810px) {
+	#section1, #section2, #section3, #section41, #section42  {
+	    margin-left: 150px;
+	}
+}
+
+
+.myPanel{
+	border: 1px solid #687d6d;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px #ccc;
+	margin: 3%;
+}
+
+.myPanel .heading{
+	background: #ABD6D6;	
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	color: #0C0F0F;
+	padding: 10px 20px;
+}
+
+.myPanel .body{
+	padding: 10px 20px;
+}
+
+.myPanel .showOnHover {
+	display: none;
+	text-align: left;
+	width: 96%;
+}
+
+.myPanel:hover{
+	box-shadow: 0px 0px 8px #666;
+	border: 2px solid #687d6d;
+}
+.myPanel:hover .showOnHover{
+	display: inline-block;
+}

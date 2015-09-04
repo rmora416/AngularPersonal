@@ -1,13 +1,15 @@
 angular.module('app.services', [])
-.factory('Products', function(){
+.factory('ProductsService', function(){
 	var products = [
 			{
 				_id:1,
-				_name: 'Coca Cola'
+				_name: 'Coca Cola',
+				_isSpecial:false
 			},
 			{
 				_id:2,
-				_name: 'Pepsi'
+				_name: 'Pepsi',
+				_isSpecial:true
 			}
 		];
 
