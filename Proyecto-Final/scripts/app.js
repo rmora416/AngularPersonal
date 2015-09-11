@@ -11,22 +11,43 @@ app.config(['$routeProvider', function($routeProvider) {
         templateUrl: 'views/AgregarBoleta.html',
         controller: 'agregarBoletaCtrl'
     }).
+
+when('/Fenomenos', {
+        templateUrl: 'views/Opciones-FenomenoOcurrido.html',
+        controller: 'fenomenoCtrl'
+    }).
+
+
   	otherwise({
     	redirectTo: '/home'
   	});
 }]);
 
-app.run(function($rootScope, $location, $anchorScroll, $routeParams) {
-  $rootScope.$on('$routeChangeSuccess', function(newRoute, oldRoute) {
-    $location.hash($routeParams.scrollTo);
-    $anchorScroll();  
-  });
-})
+
+app.directive('jqdatepicker', function () {
+    return {
+        restrict: 'A',
+        require: 'ngModel',
+         link: function (scope, element, attrs, ngModelCtrl) {
+            element.datepicker({
+                dateFormat: 'dd/mm/yy',
+                onSelect: function (date) {
+                    scope.date = date;
+                    scope.$apply();
+                }
+            });
+        }
+    };
+});
 
 
 
 
   $(document).ready(function(){
       $('[data-toggle="tooltip"]').tooltip();   
+
+      $('#datepicker1').datepicker({
+          format: 'mm/dd/yyyy'          
+        });
   });
 

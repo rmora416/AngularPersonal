@@ -1,0 +1,12 @@
+<h1>Opciones Fenomeno Ocurrido</h1>
+
+<ul>
+	<li ng-repeat="item in Lista">
+		Nombre: <input type="text" ng-model="item.Nombre" />
+		<button ng-click="Lista.$remove(item.$id)" class="btn btn-danger">-</button>
+	</li>
+</ul>
+
+<h2>Nuevo Fenomeno Ocurrido</h2>
+Nombre: <input type="text" ng-model="NuevoItem" />
+<button ng-click="agregar()" class="btn btn-primary">Agregar</button>
